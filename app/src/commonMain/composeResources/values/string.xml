@@ -1,0 +1,4 @@
+<resources>
+    <string name="button_content_description">greeting button</string>
+    <string name="logo_content_description">greeting logo</string>
+</resources>
