@@ -1,7 +1,7 @@
 # Key Naming Conventions: https://blog.gradle.org/best-practices-naming-version-catalog-entries
 
 [versions]
-androidGradlePlugin = "8.5.2" # https://developer.android.com/build/releases/gradle-plugin#compatibility
+androidGradlePlugin = "8.7.0" # https://developer.android.com/build/releases/gradle-plugin#compatibility
 androidxActivity = "1.9.2"
 androidxLifecycle = "2.8.6"
 androidxNavigation = "2.8.2"
