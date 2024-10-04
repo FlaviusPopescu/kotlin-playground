@@ -2,6 +2,8 @@
 
 dependencyResolutionManagement {
     repositories {
+        mavenCentral()
+        google()
         maven {
             name = "centralManualTesting"
             url = uri("https://central.sonatype.com/api/v1/publisher/deployments/download/")

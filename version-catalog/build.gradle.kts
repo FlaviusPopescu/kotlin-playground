@@ -1,5 +1,4 @@
 import com.vanniktech.maven.publish.SonatypeHost
-import org.gradle.accessors.dm.LibrariesForLibs
 
 plugins {
     `version-catalog`

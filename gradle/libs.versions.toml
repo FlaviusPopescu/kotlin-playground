@@ -1,3 +1,5 @@
+# Key Naming Conventions: https://blog.gradle.org/best-practices-naming-version-catalog-entries
+
 [versions]
 androidGradlePlugin = "8.5.2" # https://developer.android.com/build/releases/gradle-plugin#compatibility
 androidxActivity = "1.9.1"
