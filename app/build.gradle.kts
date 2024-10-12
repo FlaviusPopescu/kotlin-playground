@@ -11,12 +11,12 @@ kotlin {
 }
 
 dependencies {
-    implementation(libs.dagger.hilt.android)
-    ksp(libs.dagger.hilt.compiler)
+    implementation(libs.dagger.hiltAndroid)
+    ksp(libs.dagger.hiltCompiler)
 
     implementation(libs.androidx.activity.compose)
 
-    val composeBom = platform(libs.androidx.composeBom)
+    val composeBom = platform(libs.androidx.compose.bom)
     implementation(composeBom)
     implementation(libs.androidx.compose.foundation)
     implementation(libs.androidx.compose.material3)
