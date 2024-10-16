@@ -4,7 +4,7 @@
 androidGradlePlugin = "8.7.1" # https://developer.android.com/build/releases/gradle-plugin#compatibility
 androidxActivity = "1.9.3"
 androidxLifecycle = "2.8.6"
-androidxNavigation = "2.8.2"
+androidxNavigation = "2.8.3"
 androidxTest = "1.6.1"
 androidxWindow = "1.3.0"
 coil = "2.7.0"
