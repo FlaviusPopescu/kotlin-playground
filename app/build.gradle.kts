@@ -30,10 +30,10 @@ kotlin {
             implementation(compose.uiTooling)
             implementation(libs.kermit)
             implementation(libs.kotlinx.datetime)
-            implementation(libs.ktor.client.contentNegotiation)
-            implementation(libs.ktor.client.core)
-            implementation(libs.ktor.client.logging)
-            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.ktor.clientContentNegotiation)
+            implementation(libs.ktor.clientCore)
+            implementation(libs.ktor.clientLogging)
+            implementation(libs.ktor.serializationKotlinxJson)
         }
         commonTest.dependencies {
             implementation(kotlin("test"))
@@ -43,12 +43,12 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.androidx.activity.compose)
             implementation(libs.androidx.lifecycle.viewModelCompose)
-            implementation(libs.ktor.client.android)
+            implementation(libs.ktor.clientAndroid)
         }
         val desktopMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
-                implementation(libs.ktor.client.okhttp)
+                implementation(libs.ktor.clientOkhttp)
                 implementation(libs.logbackClassic)
             }
         }

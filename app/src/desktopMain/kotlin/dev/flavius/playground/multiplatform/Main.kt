@@ -1,3 +1,6 @@
+package dev.flavius.playground.multiplatform
+
+import App
 import androidx.compose.runtime.remember
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
