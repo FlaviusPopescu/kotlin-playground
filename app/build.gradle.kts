@@ -1,25 +1,12 @@
 import org.jetbrains.compose.ExperimentalComposeLibrary
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
-import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSetTree
 
 plugins {
-    alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.convention.multiplatformComposeApp)
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.compose.compiler)
-    alias(libs.plugins.compose.multiplatform)
 }
 
 kotlin {
-    jvmToolchain(17)
-
-    androidTarget {
-        @OptIn(ExperimentalKotlinGradlePluginApi::class)
-        instrumentedTestVariant.sourceSetTree.set(KotlinSourceSetTree.test)
-    }
-    jvm("desktop")
-
     sourceSets {
         commonMain.dependencies {
             implementation(compose.components.resources)
@@ -56,18 +43,7 @@ kotlin {
     }
 }
 
-android {
-    compileSdk = 34
-    defaultConfig {
-        minSdk = 29
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-    namespace = "dev.flavius.playground.kotlin"
-}
-dependencies {
-    androidTestImplementation(libs.androidx.compose.uiTestJunit4)
-    debugImplementation(libs.androidx.compose.uiTestManifest)
-}
+android.namespace = "dev.flavius.playground.kotlin"
 
 compose.desktop {
     application {

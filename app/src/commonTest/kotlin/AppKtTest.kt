@@ -1,6 +1,6 @@
 import androidx.compose.ui.test.*
-import kotlin_template.app.generated.resources.Res
-import kotlin_template.app.generated.resources.logo_content_description
+import kotlin_playground.app.generated.resources.Res
+import kotlin_playground.app.generated.resources.logo_content_description
 import kotlin.test.Test
 
 /**
