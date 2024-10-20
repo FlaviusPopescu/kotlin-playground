@@ -1,37 +1,10 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.compose.compiler)
-    alias(libs.plugins.ksp)
-    alias(libs.plugins.hilt.android)
-}
-
-kotlin {
-    jvmToolchain(17)
+    alias(libs.plugins.convention.composeAndroidApplication)
 }
 
 dependencies {
-    implementation(libs.dagger.hiltAndroid)
-    ksp(libs.dagger.hiltCompiler)
-
+    implementation(projects.featureMain)
     implementation(libs.androidx.activity.compose)
-
-    val composeBom = platform(libs.androidx.compose.bom)
-    implementation(composeBom)
-    implementation(libs.androidx.compose.foundation)
-    implementation(libs.androidx.compose.material3)
-
-    testImplementation(kotlin("test"))
-    androidTestImplementation(composeBom)
-    androidTestImplementation(libs.androidx.compose.uiTestJunit4)
-    debugImplementation(libs.androidx.compose.uiTestManifest)
 }
 
-android {
-    compileSdk = 34
-    defaultConfig {
-        minSdk = 29
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-    namespace = "dev.flavius.playground.kotlin"
-}
+android.namespace = "dev.flavius.playground.kotlin"
