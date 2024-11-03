@@ -4,7 +4,7 @@
 accompanist = "0.36.0"
 androidGradlePlugin = "8.7.2" # https://developer.android.com/build/releases/gradle-plugin#compatibility
 androidxActivity = "1.9.3"
-androidxHiltNavigationCompose = "1.0.0"
+androidxHiltNavigationCompose = "1.2.0"
 androidxLifecycle = "2.8.7"
 androidxNavigation = "2.8.3"
 androidxRoom = "2.6.1"
