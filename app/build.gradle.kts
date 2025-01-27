@@ -1,6 +1,7 @@
 import org.jetbrains.compose.ExperimentalComposeLibrary
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
+
 plugins {
     alias(libs.plugins.convention.multiplatformComposeApp)
     alias(libs.plugins.kotlin.serialization)
@@ -27,11 +28,6 @@ kotlin {
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.uiTest)
         }
-        androidMain.dependencies {
-            implementation(libs.androidx.activity.compose)
-            implementation(libs.androidx.lifecycle.viewModelCompose)
-            implementation(libs.ktor.clientAndroid)
-        }
         val desktopMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
@@ -42,8 +38,6 @@ kotlin {
         val desktopTest by getting
     }
 }
-
-android.namespace = "dev.flavius.playground.kotlin"
 
 compose.desktop {
     application {
