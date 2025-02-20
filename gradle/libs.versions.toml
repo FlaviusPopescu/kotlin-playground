@@ -1,7 +1,7 @@
 # Key Naming Conventions: https://blog.gradle.org/best-practices-naming-version-catalog-entries
 
 [versions]
-accompanist = "0.37.1"
+accompanist = "0.37.2"
 androidGradlePlugin = "8.8.1" # https://developer.android.com/build/releases/gradle-plugin#compatibility
 androidxActivity = "1.10.0"
 androidxHiltNavigationCompose = "1.2.0"
