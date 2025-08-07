@@ -63,7 +63,7 @@ androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "
 androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "androidxRoom" }
 androidx-test-core = "androidx.test:core-ktx:1.7.0"
 androidx-test-espressoCore = "androidx.test.espresso:espresso-core:3.7.0"
-androidx-test-espressoWeb = "androidx.test.espresso:espresso-web:3.6.1"
+androidx-test-espressoWeb = "androidx.test.espresso:espresso-web:3.7.0"
 androidx-test-orchestrator = "androidx.test:orchestrator:1.6.1"
 androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidxTest" }
 androidx-test-runner = "androidx.test:runner:1.7.0"
