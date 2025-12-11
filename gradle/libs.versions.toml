@@ -2,7 +2,7 @@
 
 [versions]
 accompanist = "0.37.3"
-androidGradlePlugin = "8.13.1" # https://developer.android.com/build/releases/gradle-plugin#compatibility
+androidGradlePlugin = "8.13.2" # https://developer.android.com/build/releases/gradle-plugin#compatibility
 androidxActivity = "1.12.1"
 androidxHiltNavigationCompose = "1.3.0"
 androidxLifecycle = "2.10.0"
