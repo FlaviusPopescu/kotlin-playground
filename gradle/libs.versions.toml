@@ -67,7 +67,7 @@ androidx-test-espressoWeb = "androidx.test.espresso:espresso-web:3.7.0"
 androidx-test-orchestrator = "androidx.test:orchestrator:1.6.1"
 androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidxTest" }
 androidx-test-runner = "androidx.test:runner:1.7.0"
-androidx-test-uiAutomator = "androidx.test.uiautomator:uiautomator:2.3.0"
+androidx-test-uiAutomator = "androidx.test.uiautomator:uiautomator:2.4.0"
 androidx-window = { module = "androidx.window:window", version.ref = "androidxWindow" }
 androidx-windowTesting = { module = "androidx.window:window-testing", version.ref = "androidxWindow" }
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
